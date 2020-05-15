@@ -18,10 +18,10 @@ const Smurfs = () => {
   }, []);
 
   return (
-    <div>
+    <div className="cardContainer">
       {smurfs.length >= 1
         ? smurfs.map((smurf) => (
-            <div key={smurf.id}>
+            <div className="cards" key={smurf.id}>
               <h3>{smurf.name}</h3>
               <p>{smurf.age}</p>
               <p>{smurf.height}</p>
